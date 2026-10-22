@@ -9,4 +9,4 @@
 | `git fetch` | `git fetch origin` | Pobranie informacji o zmianach bez modyfikowania plików roboczych. |
 | `git branch` | `git branch` | Wyświetlenie lokalnych gałęzi i oznaczenie aktywnej. |
 | `git switch` | `git switch -c feature/nazwa` | Utworzenie gałęzi roboczej i przełączenie na nią. |
-| `git log` | `git log --oneline -5` | Skrócony podgląd pięciu ostatnich commitów. |
+| `git log` | `git log --oneline -5` | Skrócony podgląd pięciu ostatnich commitów. Mozna wyswietli podglad 3 ostatnich | 
