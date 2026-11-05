@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ściąga Git (WARP) - Student IT Knowledge Base</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <h1>Git i GitHub (WARP)</h1>
+    <p>System kontroli wersji i platforma do współpracy.</p>
+  </header>
+  
+  <nav>
+    <h2>Nawigacja</h2>
+    <ul>
+      <li><a href="../index.html">Strona główna</a></li>
+      <li><a href="bash.html">Terminal Bash (UKOS)</a></li>
+      <li><a href="dotnet-cli.html">Narzędzia .NET (PRG1)</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section>
+      <h2>Procedura pracy (Workflow)</h2>
+      <ol>
+        <li><strong>Synchronizacja:</strong> Pobranie najnowszych zmian z repozytorium (<code>git pull</code>).</li>
+        <li><strong>Branch:</strong> Utworzenie nowej gałęzi na swoje zadanie (<code>git switch -c</code>).</li>
+        <li><strong>Zmiana:</strong> Edycja plików w edytorze kodu.</li>
+        <li><strong>Commit:</strong> Zatwierdzenie wprowadzonych zmian (<code>git add</code> i <code>git commit</code>).</li>
+        <li><strong>Push:</strong> Wysłanie gałęzi na serwer GitHub (<code>git push</code>).</li>
+        <li><strong>PR (Pull Request):</strong> Zgłoszenie zmian do weryfikacji i scalenia.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Tabela poleceń</h2>
+      <div class="table-scroll">
+        <table class="command-table">
+          <caption>Podstawowe polecenia Git</caption>
+          <thead>
+            <tr>
+              <th>Polecenie</th>
+              <th>Opis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>git clone</code></td>
+              <td>Klonuje zdalne repozytorium na dysk lokalny.</td>
+            </tr>
+            <tr>
+              <td><code>git status</code></td>
+              <td>Pokazuje stan repozytorium i śledzonych plików.</td>
+            </tr>
+            <tr>
+              <td><code>git add</code></td>
+              <td>Dodaje pliki do poczekalni (staging area) przed commitem.</td>
+            </tr>
+            <tr>
+              <td><code>git commit</code></td>
+              <td>Zapisuje zmiany z poczekalni w historii repozytorium.</td>
+            </tr>
+            <tr>
+              <td><code>git push</code></td>
+              <td>Wysyła lokalne commity do zdalnego repozytorium.</td>
+            </tr>
+            <tr>
+              <td><code>git pull</code></td>
+              <td>Pobiera i scala zmiany ze zdalnego repozytorium do lokalnego.</td>
+            </tr>
+            <tr>
+              <td><code>git fetch</code></td>
+              <td>Pobiera informacje o zmianach ze zdalnego repozytorium, ale ich nie scala.</td>
+            </tr>
+            <tr>
+              <td><code>git branch</code></td>
+              <td>Wypisuje lokalne gałęzie. Użyte z nazwą tworzy nową gałąź.</td>
+            </tr>
+            <tr>
+              <td><code>git switch</code></td>
+              <td>Zmienia aktywną gałąź (np. <code>git switch main</code>).</td>
+            </tr>
+            <tr>
+              <td><code>git log</code></td>
+              <td>Wyświetla historię commitów w bieżącej gałęzi.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Źródła i dokumentacja</h2>
+      <ul>
+        <li><a href="../docs/warp/git.md">Oryginalny plik Markdown (ściąga z zajęć)</a></li>
+        <li><a href="https://git-scm.com/doc">Oficjalna dokumentacja Git</a></li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Projekt edukacyjny - Warsztat Programisty</p>
+  </footer>
+</body>
+</html>
