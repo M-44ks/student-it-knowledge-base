@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ściąga Bash (UKOS) - Student IT Knowledge Base</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <h1>Terminal Bash (UKOS)</h1>
+    <p>Podstawowe polecenia i zasady pracy w terminalu Linux/Unix.</p>
+  </header>
+  
+  <nav>
+    <h2>Nawigacja</h2>
+    <ul>
+      <li><a href="../index.html">Strona główna</a></li>
+      <li><a href="git.html">Git i GitHub (WARP)</a></li>
+      <li><a href="dotnet-cli.html">Narzędzia .NET (PRG1)</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section>
+      <h2>Zasady bezpiecznej pracy</h2>
+      <ul>
+        <li>Zawsze sprawdzaj, w jakim katalogu się znajdujesz (<code>pwd</code>), zanim cokolwiek usuniesz.</li>
+        <li>Używaj klawisza <strong>Tab</strong> do automatycznego uzupełniania ścieżek i nazw plików.</li>
+        <li>Pamiętaj o wielkości liter! Plik <code>Dane.txt</code> to nie to samo co <code>dane.txt</code>.</li>
+      </ul>
+    </section>
+
+    <p class="info-note">
+      Polecenie <code>rm</code> usuwa pliki bez użycia kosza.
+      Przed wykonaniem sprawdź bieżący katalog.
+    </p>
+
+    <section>
+      <h2>Tabela poleceń</h2>
+      <div class="table-scroll">
+        <table class="command-table">
+          <caption>Podstawowe polecenia Bash</caption>
+          <thead>
+            <tr>
+              <th>Polecenie</th>
+              <th>Przykład</th>
+              <th>Opis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>pwd</code></td>
+              <td><code>pwd</code></td>
+              <td>Wyświetla pełną ścieżkę obecnego katalogu roboczego.</td>
+            </tr>
+            <tr>
+              <td><code>ls</code></td>
+              <td><code>ls -l</code></td>
+              <td>Wypisuje zawartość katalogu (pliki i podkatalogi).</td>
+            </tr>
+            <tr>
+              <td><code>cd</code></td>
+              <td><code>cd nazwa_katalogu/</code></td>
+              <td>Zmienia bieżący katalog roboczy.</td>
+            </tr>
+            <tr>
+              <td><code>mkdir</code></td>
+              <td><code>mkdir nowy_folder</code></td>
+              <td>Tworzy nowy, pusty katalog.</td>
+            </tr>
+            <tr>
+              <td><code>touch</code></td>
+              <td><code>touch plik.txt</code></td>
+              <td>Tworzy nowy pusty plik lub aktualizuje czas jego modyfikacji.</td>
+            </tr>
+            <tr>
+              <td><code>cp</code></td>
+              <td><code>cp plik.txt kopia.txt</code></td>
+              <td>Kopiuje pliki (aby skopiować katalog użyj flagi <code>-r</code>).</td>
+            </tr>
+            <tr>
+              <td><code>mv</code></td>
+              <td><code>mv stary.txt nowy.txt</code></td>
+              <td>Przenosi pliki/katalogi lub zmienia ich nazwę.</td>
+            </tr>
+            <tr>
+              <td><code>rm</code></td>
+              <td><code>rm plik.txt</code></td>
+              <td>Trwale usuwa pliki (aby usunąć katalog użyj flagi <code>-r</code>).</td>
+            </tr>
+            <tr>
+              <td><code>cat</code></td>
+              <td><code>cat plik.txt</code></td>
+              <td>Wyświetla całą zawartość pliku tekstowego w terminalu.</td>
+            </tr>
+            <tr>
+              <td><code>clear</code></td>
+              <td><code>clear</code></td>
+              <td>Czyści ekran terminala.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Źródła i dokumentacja</h2>
+      <ul>
+        <li><a href="../docs/ukos/bash.md">Oryginalny plik Markdown (ściąga z zajęć)</a></li>
+        <li><a href="https://www.gnu.org/software/bash/manual/bash.html">Oficjalny podręcznik GNU Bash (Manual)</a></li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Projekt edukacyjny - Warsztat Programisty</p>
+  </footer>
+</body>
+</html>
