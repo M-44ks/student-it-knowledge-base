@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ściąga .NET CLI (PRG1) - Student IT Knowledge Base</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <h1>Narzędzia .NET (PRG1)</h1>
+    <p>Tworzenie, budowanie i uruchamianie aplikacji w technologii .NET.</p>
+  </header>
+  
+  <nav>
+    <h2>Nawigacja</h2>
+    <ul>
+      <li><a href="../index.html">Strona główna</a></li>
+      <li><a href="bash.html">Terminal Bash (UKOS)</a></li>
+      <li><a href="git.html">Git i GitHub (WARP)</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section>
+      <h2>Tabela poleceń CLI</h2>
+      <div class="table-scroll">
+        <table class="command-table">
+          <caption>Podstawowe polecenia .NET</caption>
+          <thead>
+            <tr>
+              <th>Polecenie</th>
+              <th>Opis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>dotnet --version</code></td>
+              <td>Sprawdza zainstalowaną wersję pakietu .NET SDK.</td>
+            </tr>
+            <tr>
+              <td><code>dotnet --list-sdks</code></td>
+              <td>Wyświetla wszystkie zainstalowane w systemie wersje SDK.</td>
+            </tr>
+            <tr>
+              <td><code>dotnet new list</code></td>
+              <td>Wyświetla listę dostępnych szablonów projektów.</td>
+            </tr>
+            <tr>
+              <td><code>dotnet new console</code></td>
+              <td>Tworzy nowy projekt aplikacji konsolowej w bieżącym katalogu.</td>
+            </tr>
+            <tr>
+              <td><code>dotnet restore</code></td>
+              <td>Przywraca zależności i pakiety NuGet wymagane przez projekt.</td>
+            </tr>
+            <tr>
+              <td><code>dotnet build</code></td>
+              <td>Kompiluje projekt i jego zależności.</td>
+            </tr>
+            <tr>
+              <td><code>dotnet run</code></td>
+              <td>Kompiluje (jeśli to konieczne) i uruchamia aplikację.</td>
+            </tr>
+            <tr>
+              <td><code>dotnet clean</code></td>
+              <td>Czyści pliki wyjściowe poprzedniej kompilacji (katalogi bin i obj).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Kompletna sekwencja startowa</h2>
+      <p>Oto jak od zera utworzyć i uruchomić nową aplikację konsolową:</p>
+      <pre><code>mkdir MojaAplikacja
+cd MojaAplikacja
+dotnet new console
+dotnet run</code></pre>
+    </section>
+
+    <section>
+      <h2>Źródła i dokumentacja</h2>
+      <ul>
+        <li><a href="../docs/prg1/dotnet-cli.md">Oryginalny plik Markdown (ściąga z zajęć)</a></li>
+        <li><a href="https://learn.microsoft.com/pl-pl/dotnet/core/tools/">Oficjalna dokumentacja .NET CLI</a></li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Projekt edukacyjny - Warsztat Programisty</p>
+  </footer>
+</body>
+</html>
